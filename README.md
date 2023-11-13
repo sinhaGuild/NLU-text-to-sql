@@ -1,6 +1,5 @@
 # Text-to-SQL Execution
-Enterprise data is often stored in SQL databases.
-LLMs make it possible to interact with SQL databases using natural language. We can essentially build SQL `Chains` and Agents to build and run SQL queries based on natural language prompts. These are compatible with any SQL dialect supported by SQLAlchemy (e.g., MySQL, PostgreSQL, Oracle SQL, Databricks, SQLite).
+Enterprise data is often stored in SQL databases. LLMs make it possible to interact with SQL databases using natural language. We can essentially build SQL `Chains` and Agents to build and run SQL queries based on natural language prompts. These are compatible with any SQL dialect supported by SQLAlchemy (e.g., MySQL, PostgreSQL, Oracle SQL, Databricks, SQLite).
 ![Alt text](./public/image.png)
 
 ## Target Use Cases
