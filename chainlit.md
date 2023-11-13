@@ -24,11 +24,16 @@ LLMs make it possible to interact with SQL databases using natural language. We 
 ![Alt text](./public/workflow.png)
 
 ## Example
+The repo uses a sample database curated for learning purposes and has the tables
+`['albums', 'artists', 'customers', 'employees', 'genres', 'invoice_items', 'invoices', 'media_types', 'playlist_track', 'playlists', 'tracks']`
 
-Let's suppose you have a SQL Database hosted on RDS. It stores `expense` transaction information for your users. If you were to retrieve the total spend for a specific user, you'd need to write a SQL query similar to this one: 
-
-```
-SELECT SUM(amount) from Expenses WHERE UserId = 1.
-```
-
-But instead using LLMs you can run a chain that takes in natural language and then creates the SQL for you. So to create that same query you'll instead use: `What's the total spend for user 1?`
+### Sample Questions
+- Describe Tables
+  `Describe the playlisttrack table?`
+- Describe and recover from errors.
+  `Describe the playlistsong table`
+- Complex queries
+  `List the total sales per country. Which country's customers spent the most?`
+  `Show the total number of tracks in each playlist. The Playlist name should be included in the result.`
+- Complex queries, recovering from error
+  `Who are the top 3 best selling artists?`
